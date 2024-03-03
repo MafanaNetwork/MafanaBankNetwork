@@ -1,11 +1,10 @@
-package me.tahacheji.mafana.item;
+package me.tahacheji.mafana.item.currency;
 
 import de.tr7zw.nbtapi.NBTItem;
 import me.tahacheji.mafana.itemData.GameItem;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
-import org.checkerframework.checker.units.qual.C;
 
 import java.awt.*;
 

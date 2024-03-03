@@ -1,4 +1,4 @@
-package me.tahacheji.mafana.item;
+package me.tahacheji.mafana.item.currency;
 
 import org.bukkit.inventory.ItemStack;
 
@@ -8,30 +8,24 @@ public enum CurrencyType {
     DIAMOND,
     COPPER;
 
-    public ItemStack createItemStack(CurrencyType currencyType, int amount) {
+    public ItemStack createItemStack(int amount) {
         ItemStack currencyItem = null;
-        switch (currencyType) {
+        switch (this) {
             case SILVER:
-                ItemStack s = new Silver().getItem();
-                s.setAmount(amount);
-                currencyItem = s;
+                currencyItem = new Silver().getItem();
                 break;
             case GOLD:
-                ItemStack g = new Gold().getItem();
-                g.setAmount(amount);
-                currencyItem = g;
+                currencyItem = new Gold().getItem();
                 break;
             case DIAMOND:
-                ItemStack d = new Diamond().getItem();
-                d.setAmount(amount);
-                currencyItem = d;
+                currencyItem = new Diamond().getItem();
                 break;
             case COPPER:
-                ItemStack c = new Copper().getItem();
-                c.setAmount(amount);
-                currencyItem = c;
+                currencyItem = new Copper().getItem();
                 break;
         }
+        currencyItem.setAmount(amount);
         return currencyItem;
     }
+
 }

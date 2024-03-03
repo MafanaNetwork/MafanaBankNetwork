@@ -1,4 +1,4 @@
-package me.tahacheji.mafana.item;
+package me.tahacheji.mafana.item.currency;
 
 import de.tr7zw.nbtapi.NBTItem;
 import me.tahacheji.mafana.itemData.GameItem;
