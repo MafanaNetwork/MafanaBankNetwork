@@ -1,0 +1,4 @@
+name: MafanaBankNetwork
+version: '${project.version}'
+main: me.tahacheji.mafana.MafanaBankNetwork
+api-version: '1.20'
